@@ -7,26 +7,43 @@ var noOfNotes= document.querySelectorAll(".no-of-notes");
 notes=["2000","500","100","50","10","1"];
 
 checkButton.addEventListener("click", function checkReturn(){
-    if (billAmount.value>0){
-        if(cashGiven.value>0){
-            if(cashGiven.value>=billAmount.value){
-                var  amountToBeReturn = cashGiven.value-billAmount.value;
+    hideMessage(); 
+
+    if (Number(billAmount.value>0)){
+        if(Number(cashGiven.value>0)){
+            if(Number(cashGiven.value)>=Number(billAmount.value)){
+                var  amountToBeReturn = Number(cashGiven.value-billAmount.value);
                 calculateChangeToBeGiven(amountToBeReturn);
                 }
                 
             else{
-                    errorMsg.innerText="Do you wanna wash a plates";
+                showMessage("Do you wanna wash a plates");
                 }
         }
         else{
-            errorMsg.innerText="Cash given should be greater than zero";
+            showMessage("Cash given should be greater than zero");
         }
     }
     else{
-        errorMsg.innerText="Bill amount should be greater than zero";
+        showMessage("Bill amount or cash given should be greater than zero");
     }
    }
+   
+//    refreshPage();
 );
+
+function refreshPage(){
+    location.reload();
+}
+
+function showMessage(msg){
+    errorMsg.style.display="block";
+    errorMsg.innerText=msg;
+}
+
+function  hideMessage(){
+    errorMsg.style.display="none";
+}
 
 function calculateChangeToBeGiven(amountToBeReturn){
     for (var i=0; i<notes.length; i++){
@@ -35,7 +52,3 @@ function calculateChangeToBeGiven(amountToBeReturn){
         noOfNotes[i].innerText = numberOfNotes;
     }
 }
-
-
-
-
