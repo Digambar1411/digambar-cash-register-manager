@@ -1,0 +1,95 @@
+:root{
+    --primary-color:#2664af;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    text-align: center;
+    margin:auto;
+
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+.change-return{
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
+    font-size: larger;
+    margin: 1rem auto;
+
+
+}
+p{
+    font-size: larger;
+    margin-bottom: 1rem;
+}    
+
+h1{
+        padding-top: 2rem;
+        color: var(--primary-color);
+    }
+.description{
+    font-size:medium;
+    
+}
+label{
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
+    font-size: larger;
+    margin: 0.7rem auto;
+}
+
+input{
+    border: solid 2px var(--primary-color);
+    border-radius: 0.4rem;
+    padding:0.5rem;
+    margin: 1rem auto;
+    font-size: larger;
+   }
+
+button{
+    padding:0.5rem 1rem;
+    margin: 1rem auto;
+    border: 2px solid var (--primary-color);
+    border-radius: 0.5rem;
+    font-size:x-large;
+    /* font-weight: bold; */
+    color:white;
+    background-color: var(--primary-color);
+}
+#table-heading{
+    display: block;
+    /* padding: 1rem; */
+    /* margin: 1rem; */
+}
+
+.change-table{
+    width: 50%;
+    text-align: justify;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.change-table caption{
+    margin: 1rem auto;
+}
+th, td {
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem;
+    font-weight: bold;
+}
+th{
+    padding: auto;
+    margin: auto;
+}
+
+
+

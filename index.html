@@ -11,17 +11,17 @@
 <body>
     <div class="container">
         <h1>Cash Register Manager</h1>
-        <p>Enter the bill amount and cash given to know the number of notes to be return</p>
+        <p>Enter the bill amount and cash given by customer to know the number of notes to be return</p>
         <label for="bill-amnt"> Enter the bill amount: </label>
-        <input type="text" id="bill-amnt">
+        <input type="number" id="bill-amnt">
         <label for="cash-given">Enter the cash given: </label>
-        <input type="text" id="cash-given">
+        <input type="number" id="cash-given">
         <button id="check-btn">Check</button>
-        <p id="error-msg"></p>
-        
-    </div>
+        <p id="error-msg" style="color:#f73838;"></p>
 
-    <table>
+    <div class="change-return">Return Change:</div>
+
+    <table class="change-table">
         <tr>
             <th>
                 No of Notes
@@ -32,6 +32,7 @@
             <td class="no-of-notes"></td>
             <td class="no-of-notes"></td>
             <td class="no-of-notes"></td>
+        </tr>    
         <tr>
             <th>Notes</th>
             <td>2000</td>
@@ -42,6 +43,8 @@
             <td>1</td>
         </tr>
     </table>
+
+    </div>
     <script src="app.js" type="text/javascript"></script>
     
 </body>
