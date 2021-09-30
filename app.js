@@ -8,6 +8,7 @@ notes=["2000","500","100","50","10","1"];
 
 checkButton.addEventListener("click", function checkReturn(){
     hideMessage(); 
+    
 
     if (Number(billAmount.value>0)){
         if(Number(cashGiven.value>0)){
@@ -29,7 +30,6 @@ checkButton.addEventListener("click", function checkReturn(){
     }
    }
    
-//    refreshPage();
 );
 
 function refreshPage(){
